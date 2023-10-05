@@ -1,0 +1,16 @@
+
+# client
+/client/node_modules/
+/client/.env
+/client/build/
+
+# server
+/server/node_modules
+/server/.env
+/server/build/
+
+# local configs
+.DS_Store
+.vscode
+
+

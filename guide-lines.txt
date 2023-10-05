@@ -10,4 +10,5 @@
 * yarn add express @types/express mongoose @types/mongoose
 * rm -rf client/.git
 * (in root dir) git init
+* create file .gitignore
 
