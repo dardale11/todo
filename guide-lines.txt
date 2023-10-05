@@ -1,0 +1,13 @@
+* mkdir 'project-name'
+* npx create-react-app client --template typescript
+* cd client
+* yarn add @reduxjs/toolkit react-redux axios
+* rm -rf package-lock.json
+* mkdir server
+* cd server
+* yarn init -y
+* yarn add typescript
+* yarn add express @types/express mongoose @types/mongoose
+* rm -rf client/.git
+* (in root dir) git init
+
