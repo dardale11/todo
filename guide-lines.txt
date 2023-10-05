@@ -1,14 +1,53 @@
 * mkdir 'project-name'
+
+*** client
+
 * npx create-react-app client --template typescript
 * cd client
-* yarn add @reduxjs/toolkit react-redux axios
-* rm -rf package-lock.json
+* npm i @reduxjs/toolkit react-redux axios
+* cd src ==> mkdir components constants hooks interfaces redux services types views 
+* copy .gitIgnore and add client/
+* rm -rf /client/.git /client/.gitIgonre
+
+* run client `npm start`
+
+
+*** server
+
 * mkdir server
 * cd server
-* yarn init -y
-* yarn add typescript
-* yarn add express @types/express mongoose @types/mongoose
-* rm -rf client/.git
-* (in root dir) git init
-* create file .gitignore
+* npm init -y
+* on package.json change entery point to .ts
+* npm i express mongoose cors mongodb dotenv
+* npm i -D typescript ts-node-dev @types/express @types/cors // @types/mongoose
+* npx tsc --init (and set minimal config)
+* add     "esModuleInterop": true  to tsconfig.json
+* npm i nodemon
 
+
+
+*** typescript
+* npm install typescript -g
+
+*** extentions
+
+Name: Prettier - Code formatter
+Id: esbenp.prettier-vscode
+Description: Code formatter using prettier
+Version: 10.1.0
+Publisher: Prettier
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+Name: ES7+ React/Redux/React-Native snippets
+Id: dsznajder.es7-react-js-snippets
+Description: Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
+Version: 4.4.3
+Publisher: dsznajder
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+Name: ESLint
+Id: dbaeumer.vscode-eslint
+Description: Integrates ESLint JavaScript into VS Code.
+Version: 2.4.2
+Publisher: Microsoft
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
