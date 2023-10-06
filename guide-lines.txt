@@ -21,8 +21,24 @@
 * npm i express mongoose cors mongodb dotenv
 * npm i -D typescript ts-node-dev @types/express @types/cors // @types/mongoose
 * npx tsc --init (and set minimal config)
-* add     "esModuleInterop": true  to tsconfig.json
+* mkdir config controllers interfaces middleware models routes 
+
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true
+  },
+  "include": ["**/*.ts", "*.ts"],
+  "exclude": ["node_modules"]
+}
+
+
 * npm i nodemon
+
+* run server `nodemon index.ts`
 
 
 
