@@ -1,0 +1,19 @@
+.note-view-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.note-view-text-input {
+  font-size: 22px;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.note-view-remove-btn {
+  background-color: rgb(199, 42, 14);
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+}
